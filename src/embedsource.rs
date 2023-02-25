@@ -17,7 +17,7 @@ impl EmbedSource {
 
         unsafe {
             let image = Mat::new_rows_cols(frame_size.height, frame_size.width, CV_8UC3)
-            .expect("Failed to create new Mat");
+                .expect("Failed to create new Mat");
 
             EmbedSource {
                 image,
@@ -32,7 +32,7 @@ impl EmbedSource {
         let width = image.cols();
         let height = image.rows();
         let frame_size = Size::new(width, height);
-        
+
         //Some malevolent spirit breaks data when height is not divisible
         if height % size != 0 && !(instruction) {
             return Err("Image size is not a multiple of the embedding size".to_string());

@@ -1,11 +1,11 @@
 mod args;
+mod crypto;
 mod embedsource;
 mod etcher;
 mod run_tasks;
 mod settings;
 mod timer;
 mod ui;
-mod crypto;
 
 use clap::Parser;
 

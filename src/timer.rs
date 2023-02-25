@@ -1,5 +1,4 @@
 use std::time::Instant;
-use std::time::{self, Duration};
 
 pub struct Timer {
     title: &'static str,

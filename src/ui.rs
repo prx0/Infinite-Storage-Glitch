@@ -57,7 +57,7 @@ async fn enrich_embed_params(mut args: EmbedParams) -> anyhow::Result<EmbedParam
 
     println!("\nI couldn't figure out a weird bug that happens if you set the size to something that isn't a factor of the height");
     println!("If you don't want the files you put in to come out as the audio/visual equivalent of a pipe bomb, account for the above bug\n");
-    
+
     if args.mode.is_none()
         && args.block_size.is_none()
         && args.threads.is_none()
